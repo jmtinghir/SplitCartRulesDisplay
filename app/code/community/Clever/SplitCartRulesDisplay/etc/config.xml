@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Clever_SplitCartRulesDisplay>
+            <version>1.0.0</version>
+        </Clever_SplitCartRulesDisplay>
+    </modules>
+    <global>
+        <blocks>
+            <checkout>
+                <rewrite>
+                    <cart_totals>Clever_SplitCartRulesDisplay_Block_Checkout_Cart_Totals</cart_totals>
+                </rewrite>
+            </checkout>
+            <sales>
+            	<rewrite>
+            		<order_totals>Clever_SplitCartRulesDisplay_Block_Sales_Order_Totals</order_totals>
+            	</rewrite>
+            </sales>
+        </blocks>
+        <models>
+            <salesrule>
+                <rewrite>
+                    <validator>Clever_SplitCartRulesDisplay_Model_SalesRule_Validator</validator>
+                    <quote_discount>Clever_SplitCartRulesDisplay_Model_SalesRule_Quote_Discount</quote_discount>
+                </rewrite>
+            </salesrule>
+        </models>
+    </global>
+</config>

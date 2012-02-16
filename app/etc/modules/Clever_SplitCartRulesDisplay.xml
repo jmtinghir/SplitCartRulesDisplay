@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Clever_SplitCartRulesDisplay>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Clever_SplitCartRulesDisplay>
+    </modules>
+</config>
